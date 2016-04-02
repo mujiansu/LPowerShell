@@ -1,0 +1,5 @@
+Enable-PSRemoting
+
+Set-Item wsman:localhost\client\trustedhosts -value *
+
+Enter-PSSession -ComputerName [IP] -Credential [UserName]
